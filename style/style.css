@@ -1,4 +1,9 @@
-*{
+/*
+=====================================================================================
+Diseños generales
+=====================================================================================
+*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,12 +13,111 @@
 body {
     font-family: sans-serif;
     text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #555764;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
 }
 
+/*
+=====================================================================================
+Diseños para header
+=====================================================================================
+*/
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+/*
+=====================================================================================
+Diseños para container
+=====================================================================================
+*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/*
+=====================================================================================
+Diseños para formulario
+=====================================================================================
+*/
+.form-content {
+    background: linear-gradient(50deg,
+            rgba(40, 42, 55, 1) 50%,
+            rgba(40, 42, 55, 0.7)),
+        url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 1000px;
+    border-radius: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #555764;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333340;
+}
+
+/*
+=====================================================================================
+Diseños para footer
+=====================================================================================
+*/
 
 .footer {
     background-color: #24262B;
@@ -73,6 +177,27 @@ body {
     background-color: #00c3FF;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*
+=====================================================================================
+Diseños para móviles
+=====================================================================================
+*/
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
 @media(max-widht:991px) {
     .footer-row {
         text-align: center;
@@ -81,57 +206,6 @@ body {
     .footer-links {
         width: 100%;
         margin-bottom: 30px;
-        
+
     }
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #555764;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.form-content {
-    background: linear-gradient(
-        50deg,
-        rgba(40,42,55,1) 50%,
-        rgba(40,42,55,0.7) 
-    ),
-    url(../img/bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
-    width: 1000px;
-    border-radius: 25px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #fff;
-}
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-
-input[type="submit"] {
-    background-color: #555764;
-    color: #fff;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #333340;
 }
