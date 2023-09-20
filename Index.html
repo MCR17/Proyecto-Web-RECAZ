@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RECAZ</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
-    <header id="header"> 
-        <h1>Brr</h1>
+    <header id="header">
+        <a href="#" class="logo">
+            <img src="./img/logo.jpeg">
+            <h2 class="Nombre empresa">Colegio Adventista de Zaragoza</h2>
+        </a>
+        <nav>
+            <a href="" class="nav-link">Inicio</a>
+            <a href="" class="nav-link">Sobre Nosotros</a>
+            <a href="" class="nav-link">Contacto</a>
+        </nav>
     </header>
+
+    <div class="form-content">
+        <h2>Formulario CAZ</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="text" id="edad" name="edad" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="text" id="correo" name="correo" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+            </div>
+            <div class="form-group">
+                <label for="text">Celular</label>
+                <input type="text" id="tel" name="tel" required>
+            </div>
+            <div class="form-group">
+                <label for="grado">Grado que cursará</label>
+                <select id="grado" name="grado" required>
+                    <option value="">Seleccione un grado</option>
+                    <option value="1">1°</option>
+                    <option value="2">2°</option>
+                    <option value="3">3°</option>
+                    <option value="4">4°</option>
+                    <option value="5">5°</option>
+                    <option value="6">6°</option>
+                    <option value="7">7°</option>
+                    <option value="8">8°</option>
+                    <option value="9">9°</option>
+                    <option value="10">10°</option>
+                    <option value="11">11°</option>
+                </select>
+            </div>
+            <button id="btnEnviar" type="submit" value="Enviar">Enviar</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Nuestro Colegio</h4>
+                    <ul>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/mision-y-vision/" target="_blank">Misión y Visión</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/filosofia-institucional/" target="_blank">Filosofía institucional</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/identificacion/" target="_blank">Identificación</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/agentes-educativos/" target="_blank">Agentes Educativos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Estudiantes</h4>
+                    <ul>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/horarios/" target="_blank">Horarios</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/calendario/" target="_blank">Calendario</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/calendario/" target="_blank">Horario de atención docentes</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/manual-de-convivencia/" target="_blank">Manual de convivencia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/contacto/" target="_blank">Contacto</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <a href="https://www.facebook.com/profile.php?id=100063650606039" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cole.gio123456/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@colegioadventistadezaragoz5734" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
