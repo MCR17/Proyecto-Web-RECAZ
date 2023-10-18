@@ -5,27 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECAZ</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
-    <header id="header">
+    <!-- <header id="header"> -->
+    <nav class="navbar">
         <a href="#" class="logo">
-            <img src="./img/logo.jpeg">
-            <h2 class="Nombre empresa">Colegio Adventista de Zaragoza</h2>
+            <img src="./img/logo.jpeg" title="logo">
+            <h1 class="Nombre empresa">Colegio Adventista de Zaragoza</h1>
         </a>
-        <nav>
-            <a href="" class="nav-link">Inicio</a>
-            <a href="" class="nav-link">Sobre Nosotros</a>
-            <a href="" class="nav-link">Contacto</a>
-        </nav>
-    </header>
+        <div class="nav_items" id="_items">
+            <a href="./page/inicio.html" target="_blank">Inicio</a>
+            <a href="https://colegioadventistazaragoza.edu.co/" target="_blank">Sobre Nosotros</a>
+            <a href="https://colegioadventistazaragoza.edu.co/contacto/" target="_blank">Contacto</a>
+        </div>
+        <div class="nav_toggle" id="_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- </header> -->
 
     <div class="form-content">
-        <h2>Formulario CAZ</h2>
-
-        <form>
+        <h2>Enviar Formulario</h2>
+        <form action="https://formsubmit.co/numarandresl@gmail.com" method="POST" >
             <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -40,7 +46,7 @@
             </div>
             <div class="form-group">
                 <label for="correo">Correo electrónico</label>
-                <input type="text" id="correo" name="correo" placeholder="example@gmail.com" required>
+                <input type="email" id="email" name="email"  required>
             </div>
             <div class="form-group">
                 <label for="ciudad">Ciudad</label>
@@ -48,7 +54,7 @@
             </div>
             <div class="form-group">
                 <label for="text">Celular</label>
-                <input type="text" id="tel" name="tel" required>
+                <input type="text" id="tel" name="tel" placeholder="" required>
             </div>
             <div class="form-group">
                 <label for="grado">Grado que cursará</label>
@@ -67,50 +73,77 @@
                     <option value="11">11°</option>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="coments">Comentarios</label>
+                <textarea name="coments" cols="80" rows="5"></textarea>
+
+            </div>
             <button id="btnEnviar" type="submit" value="Enviar">Enviar</button>
+
+        <!--<input type="hidden" name="_next" id="">-->
+
         </form>
+
     </div>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container-footer">
             <div class="footer-row">
                 <div class="footer-links">
                     <h4>Nuestro Colegio</h4>
                     <ul>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/mision-y-vision/" target="_blank">Misión y Visión</a></li>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/filosofia-institucional/" target="_blank">Filosofía institucional</a></li>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/identificacion/" target="_blank">Identificación</a></li>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/agentes-educativos/" target="_blank">Agentes Educativos</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/mision-y-vision/" target="_blank"
+                                rel="noopener">Misión y Visión</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/filosofia-institucional/" target="_blank"
+                                rel="noopener">Filosofía institucional</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/identificacion/" target="_blank"
+                                rel="noopener">Identificación</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/agentes-educativos/" target="_blank"
+                                rel="noopener">Agentes Educativos</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Estudiantes</h4>
                     <ul>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/horarios/" target="_blank">Horarios</a></li>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/calendario/" target="_blank">Calendario</a></li>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/calendario/" target="_blank">Horario de atención docentes</a></li>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/manual-de-convivencia/" target="_blank">Manual de convivencia</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/horarios/" target="_blank"
+                                rel="noopener">Horarios</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/calendario/" target="_blank"
+                                rel="noopener">Calendario</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/calendario/" target="_blank"
+                                rel="noopener">Horario de atención docentes</a></li>
+                        <li><a href="https://colegioadventistazaragoza.edu.co/manual-de-convivencia/" target="_blank"
+                                rel="noopener">Manual de convivencia</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Ayuda</h4>
                     <ul>
-                        <li><a href="https://colegioadventistazaragoza.edu.co/contacto/" target="_blank">Contacto</a></li>
-                        
-                        
+                        <li><a href="https://colegioadventistazaragoza.edu.co/contacto/" target="_blank"
+                                rel="noopener">Contacto</a></li>
+
+
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Siguenos</h4>
                     <div class="social-link">
-                        <a href="https://www.facebook.com/profile.php?id=100063650606039" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/cole.gio123456/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@colegioadventistadezaragoz5734" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100063650606039" target="_blank"
+                            rel="noopener"><i class="fab fa-facebook-f" title="logo-facebook"></i></a>
+                        <a href="https://www.instagram.com/cole.gio123456/" target="_blank" rel="noopener"><i
+                                class="fab fa-instagram" title="logo-instagram"></i></a>
+                        <a href="https://www.youtube.com/@colegioadventistadezaragoz5734" target="_blank"
+                            rel="noopener"><i class="fab fa-youtube" title="logo-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-</body>
+    <script>
+        _toggle.onclick = () =>{
+            _items.classList.toggle("open")
+            _toggle.classList.toggle("close")
 
+        }
+    </script>
+</body>
 </html>
