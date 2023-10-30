@@ -3,6 +3,7 @@
 Diseños generales
 =====================================================================================
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ Diseños generales
 }
 
 body {
+    line-height: 1.5;
     font-family: sans-serif;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,6 +21,11 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-papel-tapiz-colorido-borroso-vivo_58702-3798.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /*
@@ -28,25 +35,10 @@ Diseños para header
 */
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-header {
-    display: flex;
-    min-height: 70px;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
+    color: white;
 }
 
 .logo img {
-
     background-image: linear-gradient(black, white), url("../img/logo.jpeg");
     height: 60px;
     margin-right: 40px;
@@ -61,18 +53,44 @@ nav a:hover {
     color: gray;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: bold;
+    font-size: 18px;
+    margin: 15px;
+    color: white;
+}
+
+.navbar {
+    background-color: #24262B;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_items a {
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav_toggle {
+    display: none;
+}
+
+
 /*
 =====================================================================================
 Diseños para container
 =====================================================================================
 */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 /*
-=====================================================================================
+=====================================================.-ñ.ñ================================
 Diseños para formulario
 =====================================================================================
 */
@@ -84,59 +102,48 @@ Diseños para formulario
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px;
-    width: 430px;
+    padding: 50px;
+    width: 700px;
     border-radius: 25px;
     display: flex;
     padding: 10px;
-    /* text-align: left; */
+    text-align: left;
     border: 1px solid black;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    height: 75 vh;
+    height: 110vh;
     max-width: 80%;
     margin-bottom: 30px;
-    margin-right: 90px;
     margin-top: 30px;
-    /* position: relative; */
-    background-color: red;
-
 }
 
 .form-content h2 {
-    color: #FFFFFF;
-    font-size: 20px;
+    color: #fff;
+    font-size: 40px;
     margin-bottom: 25px;
-}
-
-
-.form-group-inline input {
-    background-color: hsl(0, 6%, 65%);
-    display: inline-flex;
-    flex: 1;
+    
 }
 
 form {
-    width: 60%;
+    width: 90%;
     flex-direction: column;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 
 #message-label {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
-    text-align: left;
-
+    text-align: left
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 label {
-    font-size: 13px;
+    font-size: 17px;
     display: block;
     margin-bottom: 5px;
     color: #959AAB;
@@ -145,14 +152,14 @@ label {
 input,
 select {
     width: 100%;
-    padding: 2px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
     outline: none;
 }
 
 :focus {
-    outline: 1px solid #c48059;
+    outline: 1px solid #1E92E9;
 }
 
 #btnEnviar {
@@ -171,6 +178,7 @@ select {
 
 }
 
+
 /*
 =====================================================================================
 Diseños para footer
@@ -179,7 +187,13 @@ Diseños para footer
 
 .footer {
     background-color: #24262B;
-    padding: 80px 0;
+    padding: 70px 0;
+    overflow: hidden;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-row {
@@ -194,31 +208,51 @@ Diseños para footer
 }
 
 .footer-links h4 {
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
     font-weight: 500;
-    border-bottom: 2px solid #00c3ff;
-    padding-bottom: 10px;
-    display: inline-block;
+    position: relative;
+}
+
+.footer-links h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-links ul li:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .footer-links ul li a {
-    font-size: 18px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
     text-decoration: none;
-    color: #BBBBBB;
+    font-weight: 300;
+    color: #bbbbbb;
     display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 .footer-links ul li a:hover {
-    color: #FFFFFF;
-    padding-left: 6px;
+    color: #ffffff;
+    padding-left: 8px;
 }
 
 .social-link a {
-
     display: inline-block;
     min-height: 40px;
     width: 40px;
@@ -232,7 +266,8 @@ Diseños para footer
 }
 
 .social-link a:hover {
-    background-color: #00c3FF;
+    color: #24262b;
+    background-color: #ffffff;
 }
 
 /*
@@ -241,13 +276,74 @@ Diseños para móviles y tablets
 =====================================================================================
 */
 
-@media (max-width:700px) {
+
+@media (max-width:871px) {
+
+/*
+Menú hamburguesa
+*/
     header {
         flex-direction: column;
     }
 
+    .nav_items {
+        background-color: #434653;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+    }
+
+    .nav_toggle {
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .nav_toggle span {
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        margin-left: 15px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    #_toggle .nav_toggle .close span {
+
+        overflow: hidden;
+    }
+
+    .close span {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+    .close span:nth-child(2) {
+        display: none;
+    }
+
+    .close span:nth-child(3) {
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+
+    .open {
+        transform: translateX(0) !important;
+    }
+
     nav {
         padding: 10px 0px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 835px;
+        overflow: hidden;
     }
 }
 
@@ -272,5 +368,23 @@ Diseños para móviles y tablets
         width: 100%;
         margin-bottom: 30px;
 
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-links {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-links {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
     }
 }
