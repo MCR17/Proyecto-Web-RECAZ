@@ -11,21 +11,31 @@ Diseños generales
     list-style: none;
 }
 
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 20.74rem;
     line-height: 1.5;
     font-family: sans-serif;
-    text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #555764;
+    background-color: #000000;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-image: url(https://img.freepik.com/foto-gratis/fondo-papel-tapiz-colorido-borroso-vivo_58702-3798.jpg);
+    background-image: url(https://iac.educacionadventista.com/assets/images/fachada-padrao.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /*
@@ -50,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    color: gray;
+    color: rgb(0, 0, 0);
 }
 
 .logo {
@@ -63,7 +73,7 @@ nav a:hover {
 }
 
 .navbar {
-    background-color: #24262B;
+    background-color: #000000;
     height: 75px;
     display: flex;
     justify-content: space-between;
@@ -96,8 +106,8 @@ Diseños para formulario
 */
 .form-content {
     background: linear-gradient(50deg,
-            rgba(40, 42, 55, 1) 50%,
-            rgba(40, 42, 55, 0.7)),
+            rgb(46, 79, 151) 50%,
+            rgba(222, 206, 206, 0.7)),
         url(../img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -112,14 +122,14 @@ Diseños para formulario
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    height: 110vh;
+    /* height: 110vh; */
     max-width: 80%;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
 .form-content h2 {
-    color: #fff;
+    color: #ffffff;
     font-size: 40px;
     margin-bottom: 25px;
     
@@ -146,7 +156,7 @@ label {
     font-size: 17px;
     display: block;
     margin-bottom: 5px;
-    color: #959AAB;
+    color: #fffbfb;
 }
 
 input,
@@ -179,6 +189,7 @@ select {
 }
 
 
+
 /*
 =====================================================================================
 Diseños para footer
@@ -186,9 +197,14 @@ Diseños para footer
 */
 
 .footer {
-    background-color: #24262B;
+    background-color: #000000;
     padding: 70px 0;
     overflow: hidden;
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    right: 0;
+    left: 0; 
 }
 
 .container-footer {
@@ -211,7 +227,6 @@ Diseños para footer
     font-size: 18px;
     color: #FFFFFF;
     margin-bottom: 30px;
-    text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
@@ -238,7 +253,6 @@ ul {
 
 .footer-links ul li a {
     font-size: 16px;
-    text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
@@ -287,7 +301,7 @@ Menú hamburguesa
     }
 
     .nav_items {
-        background-color: #434653;
+        background-color: #000000;
         position: absolute;
         top: 60px;
         left: 0;
@@ -350,6 +364,10 @@ Menú hamburguesa
 @media(max-widht:991px) {
     body {
         padding: 30px;
+        position: relative;
+        margin: 0;
+        min-height: 100%;
+        padding-bottom: 20.74rem;
     }
 
     .form-content {
@@ -372,6 +390,13 @@ Menú hamburguesa
 }
 
 @media(max-width: 767px) {
+    body {
+        padding: 30px;
+        position: relative;
+        margin: 0;
+        min-height: 100%;
+        padding-bottom: 20.74rem;
+    }
     .footer-links {
         width: 50%;
         margin-bottom: 30px;
@@ -379,11 +404,25 @@ Menú hamburguesa
 }
 
 @media(max-width: 574px) {
+    body {
+        padding: 30px;
+        position: relative;
+        margin: 0;
+        min-height: 100%;
+        padding-bottom: 20.74rem;
+    }
     .footer-links {
         width: 100%;
     }
 }
 @media only screen and (max-width: 600px) {
+    body {
+        padding: 30px;
+        position: relative;
+        margin: 0;
+        min-height: 100%;
+        padding-bottom: 20.74rem;
+    }
     h1 {
         font-size: 24px;
     }

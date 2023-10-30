@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <!-- <header id="header"> -->
     <nav class="navbar">
         <a href="#" class="logo">
@@ -28,63 +29,61 @@
         </div>
     </nav>
     <!-- </header> -->
+        <div class="form-content">
+            <h2>Enviar Formulario</h2>
+            <form action="https://formsubmit.co/numarandresl@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="text" id="edad" name="edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                </div>
+                <div class="form-group">
+                    <label for="text">Celular</label>
+                    <input type="text" id="tel" name="tel" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="grado">Grado que cursará</label>
+                    <select id="grado" name="grado" required>
+                        <option value="">Seleccione un grado</option>
+                        <option value="1">1°</option>
+                        <option value="2">2°</option>
+                        <option value="3">3°</option>
+                        <option value="4">4°</option>
+                        <option value="5">5°</option>
+                        <option value="6">6°</option>
+                        <option value="7">7°</option>
+                        <option value="8">8°</option>
+                        <option value="9">9°</option>
+                        <option value="10">10°</option>
+                        <option value="11">11°</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="coments">Comentarios</label>
+                    <textarea name="coments" cols="80" rows="5"></textarea>
+                </div>
+                
+                <button id="btnEnviar" type="submit" value="Enviar">Enviar</button>
 
-    <div class="form-content">
-        <h2>Enviar Formulario</h2>
-        <form action="https://formsubmit.co/numarandresl@gmail.com" method="POST" >
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" required>
-            </div>
-            <div class="form-group">
-                <label for="edad">Edad</label>
-                <input type="text" id="edad" name="edad" required>
-            </div>
-            <div class="form-group">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="email" name="email"  required>
-            </div>
-            <div class="form-group">
-                <label for="ciudad">Ciudad</label>
-                <input type="text" id="ciudad" name="ciudad" required>
-            </div>
-            <div class="form-group">
-                <label for="text">Celular</label>
-                <input type="text" id="tel" name="tel" placeholder="" required>
-            </div>
-            <div class="form-group">
-                <label for="grado">Grado que cursará</label>
-                <select id="grado" name="grado" required>
-                    <option value="">Seleccione un grado</option>
-                    <option value="1">1°</option>
-                    <option value="2">2°</option>
-                    <option value="3">3°</option>
-                    <option value="4">4°</option>
-                    <option value="5">5°</option>
-                    <option value="6">6°</option>
-                    <option value="7">7°</option>
-                    <option value="8">8°</option>
-                    <option value="9">9°</option>
-                    <option value="10">10°</option>
-                    <option value="11">11°</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="coments">Comentarios</label>
-                <textarea name="coments" cols="80" rows="5"></textarea>
+                <!--<input type="hidden" name="_next" id="">-->
 
-            </div>
-            <button id="btnEnviar" type="submit" value="Enviar">Enviar</button>
-
-        <!--<input type="hidden" name="_next" id="">-->
-
-        </form>
-
-    </div>
+            </form>
+        </div>
     <!-- Footer -->
     <footer class="footer">
         <div class="container-footer">
@@ -138,8 +137,9 @@
             </div>
         </div>
     </footer>
+
     <script>
-        _toggle.onclick = () =>{
+        _toggle.onclick = () => {
             _items.classList.toggle("open")
             _toggle.classList.toggle("close")
 
